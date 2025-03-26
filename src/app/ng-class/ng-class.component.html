@@ -1,0 +1,31 @@
+<p>ng-class works!</p>
+<!-- Attribute directive    how to change the attribute dynamically -->
+ <!-- like how do we add dynamic class and dynamic css  -->
+  <!-- ngclass and ngstyle -->
+
+<div class="row">
+    <div class="col-3 pt-3" [ngClass]="divBgcolor">
+       Div 1 
+    </div>
+
+    <div class="col-3 pt-3" [ngClass]="isChecked==true?'bg-success':'bg-danger'">
+       
+     Div2
+    </div>
+</div>
+
+
+<div class="row pt-3">
+    <div class="col-3">
+        <button class="btn btn-success" (click)="addDiv1color('bg-success')">Add Green</button>
+        <button class="btn btn-danger"(click)="addDiv1color('bg-danger')" >Add Danger</button>
+
+    </div>
+
+    <div class="col-3">
+        
+        <input type="checkbox" [(ngModel)]="isChecked" /> Add Green
+        -{{isChecked}}
+
+    </div>
+</div>

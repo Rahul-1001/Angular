@@ -1,0 +1,87 @@
+<div class="row">
+
+    <div class="col-6">
+        1.Interpolation 
+        <p>FirstName:{{firstName}}</p>
+
+        <div>
+            {{rollNo}}
+         </div>
+
+         <span>{{isActive}}</span>
+         </div>
+         
+
+
+      <!-- property binding  -->
+
+<div class="col-6">
+    <input type="text" [value]="firstName" name="" id="">
+    <br>
+    <input type="text" [placeholder]="myPlaceholder"/>
+    <br>
+    <div [class]="div1ClassName" style="height: 100px; width: 100px;">
+
+    </div>
+</div>
+</div>
+
+
+
+
+
+
+
+<!-- Event binding -->
+<div class="row">
+    <div class="col-3">
+        <!-- <h2>Event Binding</h2> -->
+        <button class="btn btn-success" (click)="showWelcomeMessage()">Show welcome text </button>
+
+    </div>
+
+
+<div class="col-3">
+    <select (change)="oncityChange()">
+        <option value="pune">Pune</option>
+        <option value="bihar">Bihar</option>
+        <option value="delhi">Delhi</option>
+        <option value="ranchi">Ranchi</option>
+    </select>
+
+</div>
+</div>
+
+
+
+
+<!-- two way binding achieve by ng model directive  
+     firstly import formsModule in .ts -->
+
+
+<!-- wo way data binding means if we create a variable and if we bind the 
+the variable to an input element once we change the input element
+value that same value will get assign to the variable also 
+-->
+
+
+
+<div class="row">
+    <div class="col-3">
+        <input type="text"  [(ngModel)]="firstName"/>
+
+    </div>
+
+
+</div>
+
+
+
+<!-- structural directive  -->
+
+
+<!-- *ngif -->
+ <!-- *ngfor -->
+  
+
+

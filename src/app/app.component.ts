@@ -1,11 +1,18 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { ProductComponent } from "./product/product.component";
-import { CategoryComponent } from "./category/category.component";
+import { RouterModule } from '@angular/router'; 
+import { DataBindingComponent } from "./data-binding/data-binding.component";
+import { NgifComponent } from "./ngif/ngif.component";
+import { NgforComponent } from "./ngfor/ngfor.component";
+import { NgClassComponent } from "./ng-class/ng-class.component";
+import { TemplateFormComponent } from "./template-form/template-form.component";
+import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
+import { GetapiComponent } from "./getapi/getapi.component";
+import { PostApiComponent } from "./post-api/post-api.component";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, ProductComponent, CategoryComponent],
+  imports: [DataBindingComponent, NgifComponent, NgforComponent, NgClassComponent, RouterModule, TemplateFormComponent, ReactiveFormComponent, GetapiComponent, PostApiComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
