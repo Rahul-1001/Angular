@@ -62,13 +62,36 @@ updateCar()
       if(result.result)
         {
   
-          alert("car updated successfuly")
+          alert("car updated successfuly");
           this.getAllCar();
         }
         else{
           alert(result.message)
         }
   })
+}
+
+onDelete(id:number)
+{
+
+  const isDelete=confirm("Are you sure you want to delete?");
+  if(isDelete== true)
+  {
+    this.http.delete("https://freeapi.miniprojectideas.com/api/CarRentalApp/DeleteCarbyCarId?carid=" +id).subscribe((res:any)=>{
+      if(res.result)
+        {
+  
+          alert("car deleted successfuly");
+          this.getAllCar();
+        }
+        else{
+          alert(res.message)
+        }
+  
+     })
+  }
+
+  
 }
 
 

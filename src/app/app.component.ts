@@ -9,10 +9,11 @@ import { TemplateFormComponent } from "./template-form/template-form.component";
 import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
 import { GetapiComponent } from "./getapi/getapi.component";
 import { PostApiComponent } from "./post-api/post-api.component";
+import { CustomerComponent } from "./customer/customer.component";
 
 @Component({
   selector: 'app-root',
-  imports: [DataBindingComponent, NgifComponent, NgforComponent, NgClassComponent, RouterModule, TemplateFormComponent, ReactiveFormComponent, GetapiComponent, PostApiComponent],
+  imports: [DataBindingComponent, NgifComponent, NgforComponent, NgClassComponent, RouterModule, TemplateFormComponent, ReactiveFormComponent, GetapiComponent, PostApiComponent, CustomerComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
