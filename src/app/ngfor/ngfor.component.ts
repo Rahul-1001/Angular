@@ -1,13 +1,27 @@
-import { NgFor } from '@angular/common';
+import { DatePipe, JsonPipe, LowerCasePipe, NgFor, UpperCasePipe } from '@angular/common';
 import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-ngfor',
-  imports: [NgFor],
+  imports: [NgFor,UpperCasePipe,LowerCasePipe,JsonPipe,DatePipe],
   templateUrl: './ngfor.component.html',
   styleUrl: './ngfor.component.css'
 })
 export class NgforComponent {
+  coursename:string="angular"
+
+  studentObj:any={
+
+    name:'chetan',
+    city:'pune',
+    mobile:"8567894"
+
+
+  }
+  //array we can directly print
+  //we can print array of object using pipe
+
+  currentDate:Date=new Date()
 
     cityList:string[]=["delhi","bihar","mumbai","pune","bangalore","chennai","kolkata","hyderabad","ahmedabad","surat"];
 
