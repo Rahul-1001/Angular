@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'app-crew-desgination',
@@ -8,4 +8,12 @@ import { Component, Input } from '@angular/core';
 })
 export class CrewDesginationComponent {
 @Input() message:string=""
+@Input() token:string=""
+
+
+@Output() messageEvent=new EventEmitter<string>(); 
+sendMessage()
+{
+  this.messageEvent.emit("Hello from child to parent")
+}
 }

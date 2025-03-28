@@ -1,2 +1,8 @@
 <p>crew works!</p>
-<app-crew-desgination [message]="messageForComponent" ></app-crew-desgination>
+<app-crew-desgination [message]="messageForComponent" [token]="usertoken" 
+
+
+ (messageEvent)="receivedMessage($event)"
+></app-crew-desgination>
+
+<p>{{receivingMessage}}</p>

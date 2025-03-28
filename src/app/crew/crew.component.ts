@@ -9,5 +9,13 @@ import { CrewDesginationComponent } from "../crew-desgination/crew-desgination.c
 })
 export class CrewComponent {
   messageForComponent:string="From Parent comp";
+  usertoken:string="dffgrhyjik"
+
+
+  receivingMessage:string="";
+  receivedMessage(message:string):void
+  {
+        this.receivingMessage=message;
+  }
 
 }

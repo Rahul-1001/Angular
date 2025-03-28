@@ -13,10 +13,11 @@ import { CustomerComponent } from "./customer/customer.component";
 import { ProgreeBarComponent } from "./reusable/progree-bar/progree-bar.component";
 import { CrewComponent } from "./crew/crew.component";
 import { CrewDesginationComponent } from "./crew-desgination/crew-desgination.component";
+import { LoginComponent } from "./login/login.component";
 
 @Component({
   selector: 'app-root',
-  imports: [DataBindingComponent, NgifComponent, NgforComponent, NgClassComponent, RouterModule, TemplateFormComponent, ReactiveFormComponent, GetapiComponent, PostApiComponent, CustomerComponent, ProgreeBarComponent, CrewComponent, CrewDesginationComponent],
+  imports: [DataBindingComponent, NgifComponent, NgforComponent, NgClassComponent, RouterModule, TemplateFormComponent, ReactiveFormComponent, GetapiComponent, PostApiComponent, CustomerComponent, ProgreeBarComponent, CrewComponent, CrewDesginationComponent, LoginComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

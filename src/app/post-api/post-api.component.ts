@@ -94,7 +94,6 @@ onDelete(id:number)
   
 }
 
-
   onEdit( data:any)
   {
      this.carObj=data;
